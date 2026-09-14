@@ -74,3 +74,51 @@ $myCar["year"] = 1970;
 var_dump($myCar);
 
 //  ADICIONAR ITENS AO ARRAY
+
+
+
+// ARRAYS INDEXADAS
+$carros=array("Volvo", "BMW", "Toyota");
+
+//ACESSANDO ITEM DO ARRAY
+echo"posição[0]=".$carros[0];
+//saida = posição[0] = volvo;
+
+//MUDANDO O VALOR DE ARRAY
+$animals = array("dog", "cat", "horse", "monkey");
+var_dump($animals);
+$animals[1] = "bat";
+var_dump($animals);
+
+//PERCORRENDO O ARRAY COM LOOP
+foreach ($animals as $animal) {
+    echo $animal . "<br>";
+}
+
+//CONTANDO OS ITENS DE UMA ARRAY
+echo count($animals);
+
+
+//ARRAYS ASSOCIATIVAS (usa uma chave nomeada ao invés de um índice numérico)
+$cars = array("nome"=>"scort","marca"=>"ford", "ano"=>1980);
+var_dump($cars);
+
+//ACESSANDO UM ITEM DE ARRAY ASSOCIATIVA
+echo $cars[marca];
+
+//TROCANDO OS ITENS DA ARRAY ASSOCIATIVA
+$cars ["ano"] = 1985;
+var_dump($cars);
+
+//PERCORRENDO O ARRAY COM LOOP
+foreach ($cars as $x => $y) {
+    echo $x . "=" . $y;
+}
+
+
+echo "<br>";
+$cars = array("marca" => "Ford", "modelo" => "Mustang");
+$cars["cor"] = "vermelho";
+$cars["ano"] = 2013;
+var_dump($cars);
+echo "<br>";

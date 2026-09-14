@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Love - Produtos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <a class="logo" href="index.html" aria-label="Pet Love">
+        <span>🐶</span><span>🐱</span>
+      </a>
+      <div class="icons"><span>♟</span><span>🛒</span></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#sobre">Sobre nós</a>
+      <a class="active" href="index.html">Produto</a>
+      <a href="#adocao">Adoção</a>
+      <a href="#atendimento">Atendimento</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-dog">🐶<small>🦴</small></div>
+      <h1>Produtos</h1>
+      <div class="hero-cat">🐱<small>🪶</small></div>
+    </section>
+
+    <section class="categories" aria-label="Categorias de produtos">
+      <a class="category petiscos" href="petiscos.html">
+        <h2>Petiscos</h2><div class="category-art">🐹</div>
+      </a>
+      <a class="category acessorios" href="acessorios.html">
+        <h2>Acessórios</h2><div class="category-art">🐕</div>
+      </a>
+      <a class="category vacinas" href="vacinas.html">
+        <h2>Vacinas</h2><div class="category-art">🐈</div>
+      </a>
+      <a class="category brinquedos" href="brinquedos.html">
+        <h2>Brinquedos</h2><div class="category-art">🐕‍🦺</div>
+      </a>
+    </section>
+
+    <button class="register-btn" id="openRegister">Cadastro</button>
+
+    <section id="sobre" class="hidden-section">
+      <h2>Sobre nós</h2>
+      <p>Um espaço pensado para oferecer carinho, cuidado e produtos para os melhores amigos.</p>
+    </section>
+    <section id="adocao" class="hidden-section">
+      <h2>Adoção</h2>
+      <p>Encontre informações e orientações para dar um novo lar a um animal.</p>
+    </section>
+    <section id="atendimento" class="hidden-section">
+      <h2>Atendimento</h2>
+      <p>Entre em contato para tirar dúvidas sobre nossos produtos e serviços.</p>
+    </section>
+  </main>
+
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeRegister" aria-label="Fechar">×</button>
+      <h2>Cadastro</h2>
+      <p>Preencha seus dados:</p>
+      <form id="registerForm">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input id="nascimento" name="nascimento" type="date" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" required>
+
+        <button type="submit" class="save-btn">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal-box confirmation">
+      <div class="check">✓</div>
+      <h2>Cadastro realizado!</h2>
+      <p>Seus dados foram salvos com sucesso.</p>
+      <button class="save-btn" id="backHome">Voltar à tela inicial</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
